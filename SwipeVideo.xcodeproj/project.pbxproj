@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		342D316115016B5F00E52116 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342D316015016B5F00E52116 /* UIKit.framework */; };
+		342D316315016B5F00E52116 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342D316215016B5F00E52116 /* Foundation.framework */; };
+		342D316515016B5F00E52116 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342D316415016B5F00E52116 /* CoreGraphics.framework */; };
+		342D316B15016B5F00E52116 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 342D316915016B5F00E52116 /* InfoPlist.strings */; };
+		342D316D15016B5F00E52116 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 342D316C15016B5F00E52116 /* main.m */; };
+		342D317115016B5F00E52116 /* SwipeVideoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 342D317015016B5F00E52116 /* SwipeVideoAppDelegate.m */; };
+		342D317415016B5F00E52116 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 342D317215016B5F00E52116 /* MainWindow.xib */; };
+		342D317715016B5F00E52116 /* SwipeVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342D317615016B5F00E52116 /* SwipeVideoViewController.m */; };
+		342D317A15016B5F00E52116 /* SwipeVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 342D317815016B5F00E52116 /* SwipeVideoViewController.xib */; };
+		342D318215016B6000E52116 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342D318115016B6000E52116 /* SenTestingKit.framework */; };
+		342D318315016B6000E52116 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342D316015016B5F00E52116 /* UIKit.framework */; };
+		342D318415016B6000E52116 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342D316215016B5F00E52116 /* Foundation.framework */; };
+		342D318515016B6000E52116 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342D316415016B5F00E52116 /* CoreGraphics.framework */; };
+		342D318D15016B6000E52116 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 342D318B15016B6000E52116 /* InfoPlist.strings */; };
+		342D318F15016B6000E52116 /* SwipeVideoTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 342D318E15016B6000E52116 /* SwipeVideoTests.h */; };
+		342D319115016B6000E52116 /* SwipeVideoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 342D319015016B6000E52116 /* SwipeVideoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		342D318615016B6000E52116 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 342D315315016B5F00E52116 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 342D315B15016B5F00E52116;
+			remoteInfo = SwipeVideo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		342D315C15016B5F00E52116 /* SwipeVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipeVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		342D316015016B5F00E52116 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		342D316215016B5F00E52116 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		342D316415016B5F00E52116 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		342D316815016B5F00E52116 /* SwipeVideo-Info.plist */ = {isa = PBXFileReference; path = "SwipeVideo-Info.plist"; sourceTree = "<group>"; };
+		342D316A15016B5F00E52116 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		342D316C15016B5F00E52116 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		342D316E15016B5F00E52116 /* SwipeVideo-Prefix.pch */ = {isa = PBXFileReference; path = "SwipeVideo-Prefix.pch"; sourceTree = "<group>"; };
+		342D316F15016B5F00E52116 /* SwipeVideoAppDelegate.h */ = {isa = PBXFileReference; path = SwipeVideoAppDelegate.h; sourceTree = "<group>"; };
+		342D317015016B5F00E52116 /* SwipeVideoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwipeVideoAppDelegate.m; sourceTree = "<group>"; };
+		342D317315016B5F00E52116 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		342D317515016B5F00E52116 /* SwipeVideoViewController.h */ = {isa = PBXFileReference; path = SwipeVideoViewController.h; sourceTree = "<group>"; };
+		342D317615016B5F00E52116 /* SwipeVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwipeVideoViewController.m; sourceTree = "<group>"; };
+		342D317915016B5F00E52116 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SwipeVideoViewController.xib; sourceTree = "<group>"; };
+		342D318015016B5F00E52116 /* SwipeVideoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwipeVideoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		342D318115016B6000E52116 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		342D318A15016B6000E52116 /* SwipeVideoTests-Info.plist */ = {isa = PBXFileReference; path = "SwipeVideoTests-Info.plist"; sourceTree = "<group>"; };
+		342D318C15016B6000E52116 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		342D318E15016B6000E52116 /* SwipeVideoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwipeVideoTests.h; sourceTree = "<group>"; };
+		342D319015016B6000E52116 /* SwipeVideoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwipeVideoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		342D315915016B5F00E52116 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				342D316115016B5F00E52116 /* UIKit.framework in Frameworks */,
+				342D316315016B5F00E52116 /* Foundation.framework in Frameworks */,
+				342D316515016B5F00E52116 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		342D317C15016B5F00E52116 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				342D318215016B6000E52116 /* SenTestingKit.framework in Frameworks */,
+				342D318315016B6000E52116 /* UIKit.framework in Frameworks */,
+				342D318415016B6000E52116 /* Foundation.framework in Frameworks */,
+				342D318515016B6000E52116 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		342D315115016B5F00E52116 = {
+			isa = PBXGroup;
+			children = (
+				342D316615016B5F00E52116 /* SwipeVideo */,
+				342D318815016B6000E52116 /* SwipeVideoTests */,
+				342D315F15016B5F00E52116 /* Frameworks */,
+				342D315D15016B5F00E52116 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		342D315D15016B5F00E52116 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				342D315C15016B5F00E52116 /* SwipeVideo.app */,
+				342D318015016B5F00E52116 /* SwipeVideoTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		342D315F15016B5F00E52116 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				342D316015016B5F00E52116 /* UIKit.framework */,
+				342D316215016B5F00E52116 /* Foundation.framework */,
+				342D316415016B5F00E52116 /* CoreGraphics.framework */,
+				342D318115016B6000E52116 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		342D316615016B5F00E52116 /* SwipeVideo */ = {
+			isa = PBXGroup;
+			children = (
+				342D316F15016B5F00E52116 /* SwipeVideoAppDelegate.h */,
+				342D317015016B5F00E52116 /* SwipeVideoAppDelegate.m */,
+				342D317215016B5F00E52116 /* MainWindow.xib */,
+				342D317515016B5F00E52116 /* SwipeVideoViewController.h */,
+				342D317615016B5F00E52116 /* SwipeVideoViewController.m */,
+				342D317815016B5F00E52116 /* SwipeVideoViewController.xib */,
+				342D316715016B5F00E52116 /* Supporting Files */,
+			);
+			path = SwipeVideo;
+			sourceTree = "<group>";
+		};
+		342D316715016B5F00E52116 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				342D316815016B5F00E52116 /* SwipeVideo-Info.plist */,
+				342D316915016B5F00E52116 /* InfoPlist.strings */,
+				342D316C15016B5F00E52116 /* main.m */,
+				342D316E15016B5F00E52116 /* SwipeVideo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		342D318815016B6000E52116 /* SwipeVideoTests */ = {
+			isa = PBXGroup;
+			children = (
+				342D318E15016B6000E52116 /* SwipeVideoTests.h */,
+				342D319015016B6000E52116 /* SwipeVideoTests.m */,
+				342D318915016B6000E52116 /* Supporting Files */,
+			);
+			path = SwipeVideoTests;
+			sourceTree = "<group>";
+		};
+		342D318915016B6000E52116 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				342D318A15016B6000E52116 /* SwipeVideoTests-Info.plist */,
+				342D318B15016B6000E52116 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		342D315B15016B5F00E52116 /* SwipeVideo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 342D319415016B6000E52116 /* Build configuration list for PBXNativeTarget "SwipeVideo" */;
+			buildPhases = (
+				342D315815016B5F00E52116 /* Sources */,
+				342D315915016B5F00E52116 /* Frameworks */,
+				342D315A15016B5F00E52116 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwipeVideo;
+			productName = SwipeVideo;
+			productReference = 342D315C15016B5F00E52116 /* SwipeVideo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		342D317F15016B5F00E52116 /* SwipeVideoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 342D319715016B6000E52116 /* Build configuration list for PBXNativeTarget "SwipeVideoTests" */;
+			buildPhases = (
+				342D317B15016B5F00E52116 /* Sources */,
+				342D317C15016B5F00E52116 /* Frameworks */,
+				342D317D15016B5F00E52116 /* Resources */,
+				342D317E15016B5F00E52116 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				342D318715016B6000E52116 /* PBXTargetDependency */,
+			);
+			name = SwipeVideoTests;
+			productName = SwipeVideoTests;
+			productReference = 342D318015016B5F00E52116 /* SwipeVideoTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		342D315315016B5F00E52116 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 342D315615016B5F00E52116 /* Build configuration list for PBXProject "SwipeVideo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 342D315115016B5F00E52116;
+			productRefGroup = 342D315D15016B5F00E52116 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				342D315B15016B5F00E52116 /* SwipeVideo */,
+				342D317F15016B5F00E52116 /* SwipeVideoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		342D315A15016B5F00E52116 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				342D316B15016B5F00E52116 /* InfoPlist.strings in Resources */,
+				342D317415016B5F00E52116 /* MainWindow.xib in Resources */,
+				342D317A15016B5F00E52116 /* SwipeVideoViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		342D317D15016B5F00E52116 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				342D318D15016B6000E52116 /* InfoPlist.strings in Resources */,
+				342D318F15016B6000E52116 /* SwipeVideoTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		342D317E15016B5F00E52116 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		342D315815016B5F00E52116 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				342D316D15016B5F00E52116 /* main.m in Sources */,
+				342D317115016B5F00E52116 /* SwipeVideoAppDelegate.m in Sources */,
+				342D317715016B5F00E52116 /* SwipeVideoViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		342D317B15016B5F00E52116 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				342D319115016B6000E52116 /* SwipeVideoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		342D318715016B6000E52116 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 342D315B15016B5F00E52116 /* SwipeVideo */;
+			targetProxy = 342D318615016B6000E52116 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		342D316915016B5F00E52116 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				342D316A15016B5F00E52116 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		342D317215016B5F00E52116 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				342D317315016B5F00E52116 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		342D317815016B5F00E52116 /* SwipeVideoViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				342D317915016B5F00E52116 /* en */,
+			);
+			name = SwipeVideoViewController.xib;
+			sourceTree = "<group>";
+		};
+		342D318B15016B6000E52116 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				342D318C15016B6000E52116 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		342D319215016B6000E52116 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		342D319315016B6000E52116 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		342D319515016B6000E52116 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwipeVideo/SwipeVideo-Prefix.pch";
+				INFOPLIST_FILE = "SwipeVideo/SwipeVideo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		342D319615016B6000E52116 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwipeVideo/SwipeVideo-Prefix.pch";
+				INFOPLIST_FILE = "SwipeVideo/SwipeVideo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		342D319815016B6000E52116 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwipeVideo.app/SwipeVideo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwipeVideo/SwipeVideo-Prefix.pch";
+				INFOPLIST_FILE = "SwipeVideoTests/SwipeVideoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		342D319915016B6000E52116 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwipeVideo.app/SwipeVideo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwipeVideo/SwipeVideo-Prefix.pch";
+				INFOPLIST_FILE = "SwipeVideoTests/SwipeVideoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		342D315615016B5F00E52116 /* Build configuration list for PBXProject "SwipeVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				342D319215016B6000E52116 /* Debug */,
+				342D319315016B6000E52116 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		342D319415016B6000E52116 /* Build configuration list for PBXNativeTarget "SwipeVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				342D319515016B6000E52116 /* Debug */,
+				342D319615016B6000E52116 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		342D319715016B6000E52116 /* Build configuration list for PBXNativeTarget "SwipeVideoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				342D319815016B6000E52116 /* Debug */,
+				342D319915016B6000E52116 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 342D315315016B5F00E52116 /* Project object */;
+}
