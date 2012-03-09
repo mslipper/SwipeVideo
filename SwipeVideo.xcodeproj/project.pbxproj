@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34083D621504A54C00E92253 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34083D5F1504A52600E92253 /* QuartzCore.framework */; };
+		34083D6C1504A71E00E92253 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34083D671504A6A400E92253 /* iCarousel.m */; };
+		341C521C1505C04600288CFA /* tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 341C521A1505C04600288CFA /* tap.png */; };
+		341C521D1505C04600288CFA /* tap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 341C521B1505C04600288CFA /* tap@2x.png */; };
+		341C52201505C3E300288CFA /* youtube.png in Resources */ = {isa = PBXBuildFile; fileRef = 341C521E1505C3E300288CFA /* youtube.png */; };
+		341C52211505C3E300288CFA /* youtube@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 341C521F1505C3E300288CFA /* youtube@2x.png */; };
+		341C52241505C5B100288CFA /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 341C52221505C5B100288CFA /* facebook.png */; };
+		341C52251505C5B100288CFA /* facebook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 341C52231505C5B100288CFA /* facebook@2x.png */; };
+		341C52281505C7E200288CFA /* vimeo.png in Resources */ = {isa = PBXBuildFile; fileRef = 341C52261505C7E200288CFA /* vimeo.png */; };
+		341C52291505C7E200288CFA /* vimeo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 341C52271505C7E200288CFA /* vimeo@2x.png */; };
 		342D316115016B5F00E52116 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342D316015016B5F00E52116 /* UIKit.framework */; };
 		342D316315016B5F00E52116 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342D316215016B5F00E52116 /* Foundation.framework */; };
 		342D316515016B5F00E52116 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342D316415016B5F00E52116 /* CoreGraphics.framework */; };
@@ -23,6 +33,10 @@
 		342D318D15016B6000E52116 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 342D318B15016B6000E52116 /* InfoPlist.strings */; };
 		342D318F15016B6000E52116 /* SwipeVideoTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 342D318E15016B6000E52116 /* SwipeVideoTests.h */; };
 		342D319115016B6000E52116 /* SwipeVideoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 342D319015016B6000E52116 /* SwipeVideoTests.m */; };
+		3439F9301506B3A700C6AC11 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 3439F92E1506B3A700C6AC11 /* background.png */; };
+		3439F9311506B3A700C6AC11 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3439F92F1506B3A700C6AC11 /* background@2x.png */; };
+		347E68A31507EAA400E1A15E /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 347E68961507EAA400E1A15E /* FBDialog.bundle */; };
+		347E68A41507EAA400E1A15E /* libfacebook_ios_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 347E689C1507EAA400E1A15E /* libfacebook_ios_sdk.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,26 +50,54 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		34083D5F1504A52600E92253 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		34083D661504A6A400E92253 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		34083D671504A6A400E92253 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		341C521A1505C04600288CFA /* tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tap.png; sourceTree = "<group>"; };
+		341C521B1505C04600288CFA /* tap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tap@2x.png"; sourceTree = "<group>"; };
+		341C521E1505C3E300288CFA /* youtube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youtube.png; sourceTree = "<group>"; };
+		341C521F1505C3E300288CFA /* youtube@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "youtube@2x.png"; sourceTree = "<group>"; };
+		341C52221505C5B100288CFA /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		341C52231505C5B100288CFA /* facebook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook@2x.png"; sourceTree = "<group>"; };
+		341C52261505C7E200288CFA /* vimeo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vimeo.png; sourceTree = "<group>"; };
+		341C52271505C7E200288CFA /* vimeo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vimeo@2x.png"; sourceTree = "<group>"; };
 		342D315C15016B5F00E52116 /* SwipeVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipeVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		342D316015016B5F00E52116 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		342D316215016B5F00E52116 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		342D316415016B5F00E52116 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		342D316815016B5F00E52116 /* SwipeVideo-Info.plist */ = {isa = PBXFileReference; path = "SwipeVideo-Info.plist"; sourceTree = "<group>"; };
+		342D316815016B5F00E52116 /* SwipeVideo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SwipeVideo-Info.plist"; sourceTree = "<group>"; };
 		342D316A15016B5F00E52116 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		342D316C15016B5F00E52116 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		342D316E15016B5F00E52116 /* SwipeVideo-Prefix.pch */ = {isa = PBXFileReference; path = "SwipeVideo-Prefix.pch"; sourceTree = "<group>"; };
-		342D316F15016B5F00E52116 /* SwipeVideoAppDelegate.h */ = {isa = PBXFileReference; path = SwipeVideoAppDelegate.h; sourceTree = "<group>"; };
+		342D316E15016B5F00E52116 /* SwipeVideo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwipeVideo-Prefix.pch"; sourceTree = "<group>"; };
+		342D316F15016B5F00E52116 /* SwipeVideoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwipeVideoAppDelegate.h; sourceTree = "<group>"; };
 		342D317015016B5F00E52116 /* SwipeVideoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwipeVideoAppDelegate.m; sourceTree = "<group>"; };
 		342D317315016B5F00E52116 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		342D317515016B5F00E52116 /* SwipeVideoViewController.h */ = {isa = PBXFileReference; path = SwipeVideoViewController.h; sourceTree = "<group>"; };
+		342D317515016B5F00E52116 /* SwipeVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwipeVideoViewController.h; sourceTree = "<group>"; };
 		342D317615016B5F00E52116 /* SwipeVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwipeVideoViewController.m; sourceTree = "<group>"; };
 		342D317915016B5F00E52116 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SwipeVideoViewController.xib; sourceTree = "<group>"; };
 		342D318015016B5F00E52116 /* SwipeVideoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwipeVideoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		342D318115016B6000E52116 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		342D318A15016B6000E52116 /* SwipeVideoTests-Info.plist */ = {isa = PBXFileReference; path = "SwipeVideoTests-Info.plist"; sourceTree = "<group>"; };
+		342D318A15016B6000E52116 /* SwipeVideoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SwipeVideoTests-Info.plist"; sourceTree = "<group>"; };
 		342D318C15016B6000E52116 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		342D318E15016B6000E52116 /* SwipeVideoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwipeVideoTests.h; sourceTree = "<group>"; };
 		342D319015016B6000E52116 /* SwipeVideoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwipeVideoTests.m; sourceTree = "<group>"; };
+		3439F92E1506B3A700C6AC11 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		3439F92F1506B3A700C6AC11 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		347E68941507EAA400E1A15E /* Facebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Facebook.h; sourceTree = "<group>"; };
+		347E68951507EAA400E1A15E /* FBConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBConnect.h; sourceTree = "<group>"; };
+		347E68961507EAA400E1A15E /* FBDialog.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBDialog.bundle; sourceTree = "<group>"; };
+		347E68971507EAA400E1A15E /* FBDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBDialog.h; sourceTree = "<group>"; };
+		347E68981507EAA400E1A15E /* FBFrictionlessRequestSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFrictionlessRequestSettings.h; sourceTree = "<group>"; };
+		347E68991507EAA400E1A15E /* FBLoginDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLoginDialog.h; sourceTree = "<group>"; };
+		347E689A1507EAA400E1A15E /* FBRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBRequest.h; sourceTree = "<group>"; };
+		347E689B1507EAA400E1A15E /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		347E689C1507EAA400E1A15E /* libfacebook_ios_sdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfacebook_ios_sdk.a; sourceTree = "<group>"; };
+		347E689D1507EAA400E1A15E /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		347E689E1507EAA400E1A15E /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		347E689F1507EAA400E1A15E /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		347E68A01507EAA400E1A15E /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		347E68A11507EAA400E1A15E /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		347E68A21507EAA400E1A15E /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +105,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34083D621504A54C00E92253 /* QuartzCore.framework in Frameworks */,
 				342D316115016B5F00E52116 /* UIKit.framework in Frameworks */,
 				342D316315016B5F00E52116 /* Foundation.framework in Frameworks */,
 				342D316515016B5F00E52116 /* CoreGraphics.framework in Frameworks */,
+				347E68A41507EAA400E1A15E /* libfacebook_ios_sdk.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,9 +127,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34083D651504A66300E92253 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				34083D661504A6A400E92253 /* iCarousel.h */,
+				34083D671504A6A400E92253 /* iCarousel.m */,
+			);
+			name = Libraries;
+			path = SwipeVideo;
+			sourceTree = "<group>";
+		};
+		34083D691504A6CC00E92253 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3439F92E1506B3A700C6AC11 /* background.png */,
+				3439F92F1506B3A700C6AC11 /* background@2x.png */,
+				341C52221505C5B100288CFA /* facebook.png */,
+				341C52231505C5B100288CFA /* facebook@2x.png */,
+				341C521E1505C3E300288CFA /* youtube.png */,
+				341C521F1505C3E300288CFA /* youtube@2x.png */,
+				341C52261505C7E200288CFA /* vimeo.png */,
+				341C52271505C7E200288CFA /* vimeo@2x.png */,
+				341C521A1505C04600288CFA /* tap.png */,
+				341C521B1505C04600288CFA /* tap@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		342D315115016B5F00E52116 = {
 			isa = PBXGroup;
 			children = (
+				347E68911507EA9100E1A15E /* SDKs */,
+				34083D651504A66300E92253 /* Libraries */,
+				34083D691504A6CC00E92253 /* Resources */,
 				342D316615016B5F00E52116 /* SwipeVideo */,
 				342D318815016B6000E52116 /* SwipeVideoTests */,
 				342D315F15016B5F00E52116 /* Frameworks */,
@@ -105,6 +179,7 @@
 		342D315F15016B5F00E52116 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				34083D5F1504A52600E92253 /* QuartzCore.framework */,
 				342D316015016B5F00E52116 /* UIKit.framework */,
 				342D316215016B5F00E52116 /* Foundation.framework */,
 				342D316415016B5F00E52116 /* CoreGraphics.framework */,
@@ -116,11 +191,11 @@
 		342D316615016B5F00E52116 /* SwipeVideo */ = {
 			isa = PBXGroup;
 			children = (
+				342D317515016B5F00E52116 /* SwipeVideoViewController.h */,
+				342D317615016B5F00E52116 /* SwipeVideoViewController.m */,
 				342D316F15016B5F00E52116 /* SwipeVideoAppDelegate.h */,
 				342D317015016B5F00E52116 /* SwipeVideoAppDelegate.m */,
 				342D317215016B5F00E52116 /* MainWindow.xib */,
-				342D317515016B5F00E52116 /* SwipeVideoViewController.h */,
-				342D317615016B5F00E52116 /* SwipeVideoViewController.m */,
 				342D317815016B5F00E52116 /* SwipeVideoViewController.xib */,
 				342D316715016B5F00E52116 /* Supporting Files */,
 			);
@@ -155,6 +230,36 @@
 				342D318B15016B6000E52116 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		347E68911507EA9100E1A15E /* SDKs */ = {
+			isa = PBXGroup;
+			children = (
+				347E68931507EAA400E1A15E /* facebook-ios-sdk */,
+			);
+			name = SDKs;
+			sourceTree = "<group>";
+		};
+		347E68931507EAA400E1A15E /* facebook-ios-sdk */ = {
+			isa = PBXGroup;
+			children = (
+				347E68941507EAA400E1A15E /* Facebook.h */,
+				347E68951507EAA400E1A15E /* FBConnect.h */,
+				347E68961507EAA400E1A15E /* FBDialog.bundle */,
+				347E68971507EAA400E1A15E /* FBDialog.h */,
+				347E68981507EAA400E1A15E /* FBFrictionlessRequestSettings.h */,
+				347E68991507EAA400E1A15E /* FBLoginDialog.h */,
+				347E689A1507EAA400E1A15E /* FBRequest.h */,
+				347E689B1507EAA400E1A15E /* JSON.h */,
+				347E689C1507EAA400E1A15E /* libfacebook_ios_sdk.a */,
+				347E689D1507EAA400E1A15E /* NSObject+SBJSON.h */,
+				347E689E1507EAA400E1A15E /* NSString+SBJSON.h */,
+				347E689F1507EAA400E1A15E /* SBJSON.h */,
+				347E68A01507EAA400E1A15E /* SBJsonBase.h */,
+				347E68A11507EAA400E1A15E /* SBJsonParser.h */,
+				347E68A21507EAA400E1A15E /* SBJsonWriter.h */,
+			);
+			path = "facebook-ios-sdk";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +306,9 @@
 /* Begin PBXProject section */
 		342D315315016B5F00E52116 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
 			buildConfigurationList = 342D315615016B5F00E52116 /* Build configuration list for PBXProject "SwipeVideo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -227,6 +335,17 @@
 				342D316B15016B5F00E52116 /* InfoPlist.strings in Resources */,
 				342D317415016B5F00E52116 /* MainWindow.xib in Resources */,
 				342D317A15016B5F00E52116 /* SwipeVideoViewController.xib in Resources */,
+				341C521C1505C04600288CFA /* tap.png in Resources */,
+				341C521D1505C04600288CFA /* tap@2x.png in Resources */,
+				341C52201505C3E300288CFA /* youtube.png in Resources */,
+				341C52211505C3E300288CFA /* youtube@2x.png in Resources */,
+				341C52241505C5B100288CFA /* facebook.png in Resources */,
+				341C52251505C5B100288CFA /* facebook@2x.png in Resources */,
+				341C52281505C7E200288CFA /* vimeo.png in Resources */,
+				341C52291505C7E200288CFA /* vimeo@2x.png in Resources */,
+				3439F9301506B3A700C6AC11 /* background.png in Resources */,
+				3439F9311506B3A700C6AC11 /* background@2x.png in Resources */,
+				347E68A31507EAA400E1A15E /* FBDialog.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +384,7 @@
 				342D316D15016B5F00E52116 /* main.m in Sources */,
 				342D317115016B5F00E52116 /* SwipeVideoAppDelegate.m in Sources */,
 				342D317715016B5F00E52116 /* SwipeVideoViewController.m in Sources */,
+				34083D6C1504A71E00E92253 /* iCarousel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,7 +457,7 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -354,7 +474,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -371,6 +491,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SwipeVideo/SwipeVideo-Prefix.pch";
 				INFOPLIST_FILE = "SwipeVideo/SwipeVideo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/facebook-ios-sdk\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -382,6 +506,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SwipeVideo/SwipeVideo-Prefix.pch";
 				INFOPLIST_FILE = "SwipeVideo/SwipeVideo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/facebook-ios-sdk\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -440,6 +568,7 @@
 				342D319615016B6000E52116 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		342D319715016B6000E52116 /* Build configuration list for PBXNativeTarget "SwipeVideoTests" */ = {
 			isa = XCConfigurationList;
@@ -448,6 +577,7 @@
 				342D319915016B6000E52116 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

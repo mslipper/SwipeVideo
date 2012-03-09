@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SwipeVideoAppDelegate.h"
+#import "iCarousel.h"
+#import "Facebook.h"
 
-@interface SwipeVideoViewController : UIViewController
+@interface SwipeVideoViewController : UIViewController <UIImagePickerControllerDelegate, UIAlertViewDelegate, iCarouselDataSource, iCarouselDelegate>
+{
+    UIImagePickerController *picker;}
+
+@property (nonatomic, retain) UIImagePickerController *picker;
+@property (nonatomic, retain) IBOutlet iCarousel *carousel;
 
 @end
