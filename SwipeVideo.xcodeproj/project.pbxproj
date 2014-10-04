@@ -73,6 +73,8 @@
 		34BFF38B155DAFE8006A2E32 /* doneBackgroundDepressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 34BFF388155DAFE8006A2E32 /* doneBackgroundDepressed.png */; };
 		34BFF38C155DAFE8006A2E32 /* doneBackgroundDepressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34BFF389155DAFE8006A2E32 /* doneBackgroundDepressed@2x.png */; };
 		34ED8B9315115FC100FEE5D7 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34ED8B9215115FC000FEE5D7 /* MobileCoreServices.framework */; };
+		77C2F74319E069DB00DCB414 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 77C2F74119E069DB00DCB414 /* LICENSE */; };
+		77C2F74419E069DB00DCB414 /* TemplateIcon2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77C2F74219E069DB00DCB414 /* TemplateIcon2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -515,6 +517,8 @@
 		34BFF388155DAFE8006A2E32 /* doneBackgroundDepressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doneBackgroundDepressed.png; sourceTree = "<group>"; };
 		34BFF389155DAFE8006A2E32 /* doneBackgroundDepressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "doneBackgroundDepressed@2x.png"; sourceTree = "<group>"; };
 		34ED8B9215115FC000FEE5D7 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		77C2F74119E069DB00DCB414 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		77C2F74219E069DB00DCB414 /* TemplateIcon2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon2x.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -597,6 +601,8 @@
 		342D315115016B5F00E52116 = {
 			isa = PBXGroup;
 			children = (
+				77C2F74119E069DB00DCB414 /* LICENSE */,
+				77C2F74219E069DB00DCB414 /* TemplateIcon2x.png */,
 				345AA98A154B5EA60041F577 /* Icon@2x.png */,
 				345AA988154B5E9E0041F577 /* Icon.png */,
 				34BFF381155DA50A006A2E32 /* Default.png */,
@@ -1192,8 +1198,10 @@
 				34BFF37E155CEF3C006A2E32 /* loadingImage@2x.png in Resources */,
 				34BFF380155CEF67006A2E32 /* Default@2x.png in Resources */,
 				34BFF382155DA50A006A2E32 /* Default.png in Resources */,
+				77C2F74319E069DB00DCB414 /* LICENSE in Resources */,
 				34BFF385155DAF02006A2E32 /* cancelBackgroundDepressed.png in Resources */,
 				34BFF386155DAF02006A2E32 /* cancelBackgroundDepressed@2x.png in Resources */,
+				77C2F74419E069DB00DCB414 /* TemplateIcon2x.png in Resources */,
 				34BFF38A155DAFE8006A2E32 /* cancelBackground.png in Resources */,
 				34BFF38B155DAFE8006A2E32 /* doneBackgroundDepressed.png in Resources */,
 				34BFF38C155DAFE8006A2E32 /* doneBackgroundDepressed@2x.png in Resources */,
