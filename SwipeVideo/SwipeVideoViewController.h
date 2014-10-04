@@ -7,15 +7,26 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
+#import <MobileCoreServices/UTCoreTypes.h>
+#import <AVFoundation/AVFoundation.h>
+#import <Accounts/Accounts.h>
+#import <Twitter/Twitter.h>
+#import "GData.h"
+#import "GTMOAuth2ViewControllerTouch.h"
+#import "ServiceCredentials.h"
 #import "SwipeVideoAppDelegate.h"
-#import "iCarousel.h"
-#import "Facebook.h"
+#import "VideoDetailsViewController.h"
+#import "VideoDelegate.h"
+#import "Video.h"
 
-@interface SwipeVideoViewController : UIViewController <UIImagePickerControllerDelegate, UIAlertViewDelegate, iCarouselDataSource, iCarouselDelegate>
-{
-    UIImagePickerController *picker;}
+@interface SwipeVideoViewController : UIViewController <UIActionSheetDelegate, VideoDetailsViewControllerDelegate, VideoDelegate>
 
-@property (nonatomic, retain) UIImagePickerController *picker;
-@property (nonatomic, retain) IBOutlet iCarousel *carousel;
+- (IBAction)cornerPressed:(UIButton *)sender;
+
+@property (nonatomic, strong) IBOutlet UIImageView *videoThumbnail;
+@property (nonatomic, strong) IBOutlet UIImageView *trashButton;
+
+@property (nonatomic, strong) Video *video;
 
 @end

@@ -7,13 +7,11 @@
 //
 
 #import "SwipeVideoAppDelegate.h"
-
 #import "SwipeVideoViewController.h"
 
 @implementation SwipeVideoAppDelegate
 
 @synthesize window = _window;
-@synthesize viewController = _viewController;
 @synthesize facebook;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -29,9 +27,10 @@
         facebook.accessToken = [defaults objectForKey:@"FBAccessTokenKey"];
         facebook.expirationDate = [defaults objectForKey:@"FBExpirationDateKey"];
     }
-     
-    self.window.rootViewController = self.viewController;
-    [self.window makeKeyAndVisible];
+    
+    UIImage *backgroundImage = [UIImage imageNamed:@"navbarBackground"];
+    [[UINavigationBar appearance] setBackgroundImage:backgroundImage forBarMetrics:UIBarMetricsDefault];
+    
     return YES;
 }
 
@@ -76,6 +75,25 @@
 
 #pragma mark - Facebook methods
 
+- (void)request:(FBRequest *)request didLoad:(id)result {    
+	if ([result isKindOfClass:[NSArray class]]) {
+		result = [result objectAtIndex:0];
+	}
+	NSLog(@"Result of API call: %@", result);
+    [self setNetworkActivityIndicatorVisible:NO];
+}
+
+- (void)requestLoading:(FBRequest *)request
+{
+    [self setNetworkActivityIndicatorVisible:YES];
+}
+
+- (void)request:(FBRequest *)request didFailWithError:(NSError *)error {
+    NSLog(@"%@", [error localizedDescription]);
+    NSLog(@"Err details: %@", [error description]);
+    [self setNetworkActivityIndicatorVisible:NO];
+};
+
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
 {
     return [facebook handleOpenURL:url];
@@ -103,12 +121,13 @@
         [defaults removeObjectForKey:@"FBExpirationDateKey"];
         [defaults synchronize];
     }
-    [defaults release];
 }
 
 - (void)fbDidNotLogin:(BOOL)cancelled
 {
-    NSLog(@"User did not log in.");
+    if (cancelled) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"fbDidNotLogin" object:nil];
+    }
 }
 
 - (void)fbDidExtendToken:(NSString *)accessToken expiresAt:(NSDate *)expiresAt
@@ -124,11 +143,20 @@
     [self fbDidLogout];
 }
 
-- (void)dealloc
-{
-    [_window release];
-    [_viewController release];
-    [super dealloc];
+- (void)setNetworkActivityIndicatorVisible:(BOOL)setVisible {
+    static NSInteger numberOfCallsToSetVisible = 0;
+    if (setVisible) 
+        numberOfCallsToSetVisible++;
+    else 
+        numberOfCallsToSetVisible--;
+    
+    // The assertion helps to find programmer errors in activity indicator management.
+    // Since a negative NumberOfCallsToSetVisible is not a fatal error, 
+    // it should probably be removed from production code.
+    NSAssert(numberOfCallsToSetVisible >= 0, @"Network Activity Indicator was asked to hide more often than shown");
+    
+    // Display the indicator as long as our static counter is > 0.
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:(numberOfCallsToSetVisible > 0)];
 }
 
 @end

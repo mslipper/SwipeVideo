@@ -11,14 +11,12 @@
 
 @class SwipeVideoViewController;
 
-@interface SwipeVideoAppDelegate : NSObject <UIApplicationDelegate, FBSessionDelegate>
-{
-    Facebook *facebook;
-}
+@interface SwipeVideoAppDelegate : UIResponder <UIApplicationDelegate, FBSessionDelegate, FBRequestDelegate>
 
 
-@property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) IBOutlet SwipeVideoViewController *viewController;
-@property (nonatomic, retain) Facebook *facebook;
+@property (nonatomic, strong) UIWindow *window;
+@property (nonatomic, strong) Facebook *facebook;
+
+- (void)setNetworkActivityIndicatorVisible:(BOOL)setVisible;
 
 @end

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="VT2-lo-Eym">
+    <dependencies>
+        <deployment version="1280" identifier="iOS"/>
+        <development version="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Swipe Video View Controller-->
+        <scene sceneID="7gh-9K-vc9">
+            <objects>
+                <viewController id="wEg-k4-gBT" customClass="SwipeVideoViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ig5-s7-yMB">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="background@2x.png" id="GRk-rD-FlA">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view alpha="0.0" tag="1" contentMode="scaleToFill" id="RAe-KR-kXi" userLabel="North" customClass="UIButton">
+                                <rect key="frame" x="97" y="0.0" width="125" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <connections>
+                                    <action selector="cornerPressed:" destination="wEg-k4-gBT" eventType="touchUpInside" id="waX-w5-SeF"/>
+                                </connections>
+                            </view>
+                            <view alpha="0.0" tag="2" contentMode="scaleToFill" id="I0l-x5-jH1" userLabel="East" customClass="UIButton">
+                                <rect key="frame" x="285" y="167" width="35" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <connections>
+                                    <action selector="cornerPressed:" destination="wEg-k4-gBT" eventType="touchUpInside" id="qVL-q9-viR"/>
+                                </connections>
+                            </view>
+                            <view alpha="0.0" tag="3" contentMode="scaleToFill" id="DIL-pX-ihI" userLabel="West" customClass="UIButton">
+                                <rect key="frame" x="0.0" y="168" width="35" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <connections>
+                                    <action selector="cornerPressed:" destination="wEg-k4-gBT" eventType="touchUpInside" id="HJb-IG-NPa"/>
+                                </connections>
+                            </view>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" image="trash.png" id="B0U-a4-br5">
+                                <rect key="frame" x="97" y="425" width="125" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" id="qt4-ac-HWX" userLabel="Video Thumbnail">
+                                <rect key="frame" x="98" y="167" width="125" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="trashButton" destination="B0U-a4-br5" id="a0B-wa-HUW"/>
+                        <outlet property="videoThumbnail" destination="qt4-ac-HWX" id="e1H-Xw-spJ"/>
+                        <segue destination="Rvb-ac-JBU" kind="modal" identifier="ShowYouTubeAuthentication" id="tUo-2w-xgb"/>
+                        <segue destination="VT2-lo-Eym" kind="modal" identifier="ShowVideoRecorderView" id="PCi-YA-3I3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OKu-ph-3xd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-35" y="199"/>
+        </scene>
+        <!--Video Details View Controller - SwipeVideo-->
+        <scene sceneID="fon-8z-yCh">
+            <objects>
+                <tableViewController storyboardIdentifier="VideoDetailsViewController" id="r3b-f6-KcH" customClass="VideoDetailsViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="ieR-hY-YV4">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Video Details" id="eiB-bc-Tz9">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="videoTitle" id="XBB-I9-TvV">
+                                        <rect key="frame" x="0.0" y="46" width="320" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title it." adjustsFontSizeToFit="NO" minimumFontSize="17" id="DOg-EF-iJe">
+                                                    <rect key="frame" x="10" y="6" width="280" height="31"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="videoDescription" rowHeight="149" id="CnU-ih-TLu">
+                                        <rect key="frame" x="0.0" y="91" width="320" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="0.0" width="300" height="148"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Lix-OX-3kA" customClass="UIPlaceHolderTextView">
+                                                    <rect key="frame" x="4" y="0.0" width="286" height="148"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="" id="baM-JG-y76">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="videoTags" id="XCj-fG-HQb">
+                                        <rect key="frame" x="0.0" y="261" width="320" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tag it." adjustsFontSizeToFit="NO" minimumFontSize="17" id="3np-Qd-6Qx">
+                                                    <rect key="frame" x="10" y="6" width="280" height="31"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="" id="e66-6D-8Bg">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="videoCategory" id="g6G-Hj-F7r">
+                                        <rect key="frame" x="0.0" y="327" width="320" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Give it a category." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="qiG-Vk-Z60">
+                                                    <rect key="frame" x="11" y="11" width="144" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="SwipeVideo" id="ac6-7n-70X">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="TFq-Le-6ef">
+                            <connections>
+                                <action selector="cancelPressed:" destination="r3b-f6-KcH" id="uN6-1u-ehW"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="ovg-9B-P8a">
+                            <connections>
+                                <action selector="donePressed:" destination="r3b-f6-KcH" id="fgY-2V-I7a"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cancelButton" destination="TFq-Le-6ef" id="t1G-B7-3e2"/>
+                        <outlet property="doneButton" destination="ovg-9B-P8a" id="vjj-Q0-IME"/>
+                        <outlet property="videoCategoryField" destination="qiG-Vk-Z60" id="Nsq-4u-ubq"/>
+                        <outlet property="videoDescriptionField" destination="Lix-OX-3kA" id="b1H-cY-Ht5"/>
+                        <outlet property="videoTagsField" destination="3np-Qd-6Qx" id="jc7-uF-u3T"/>
+                        <outlet property="videoTitleField" destination="DOg-EF-iJe" id="BTf-WJ-07M"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k2k-B2-9mJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="499" y="-409"/>
+        </scene>
+        <!--Video Recorder Controller-->
+        <scene sceneID="BMV-55-bXt">
+            <objects>
+                <viewController id="VT2-lo-Eym" customClass="VideoRecorderController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n1L-hB-Y17">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="J2Z-aZ-OVC">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="M4C-Da-P2s" userLabel="Record">
+                                        <rect key="frame" x="98" y="167" width="125" height="125"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startRecording:" destination="VT2-lo-Eym" eventType="touchUpInside" id="e1I-x6-Bqh"/>
+                                        </connections>
+                                    </button>
+                                    <activityIndicatorView hidden="YES" opaque="NO" alpha="0.0" contentMode="scaleToFill" style="whiteLarge" id="biN-ud-fTH" userLabel="Loading">
+                                        <rect key="frame" x="142" y="211" width="37" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </activityIndicatorView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="mQg-py-Q71">
+                                        <rect key="frame" x="228" y="11" width="77" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="record.png" id="E77-e8-G44">
+                                        <rect key="frame" x="148" y="217" width="25" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <view alpha="0.5" contentMode="scaleToFill" id="o6W-fX-CQu">
+                                        <rect key="frame" x="268" y="404" width="32" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="film.png" id="ctQ-h6-0lp">
+                                                <rect key="frame" x="5" y="5" width="22" height="26"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" text="Tap anywhere to stop recording" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="lwX-sn-B91">
+                                        <rect key="frame" x="120" y="412" width="180" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="cameraRollButton" destination="o6W-fX-CQu" id="PLB-TK-M9d"/>
+                        <outlet property="loadingView" destination="biN-ud-fTH" id="gpF-M0-j6i"/>
+                        <outlet property="previewView" destination="J2Z-aZ-OVC" id="TlM-ro-9pr"/>
+                        <outlet property="recordIcon" destination="E77-e8-G44" id="ivg-PW-eLP"/>
+                        <outlet property="recordView" destination="M4C-Da-P2s" id="aGR-tP-hKF"/>
+                        <outlet property="recordingTimer" destination="mQg-py-Q71" id="Ns4-I8-IXM"/>
+                        <outlet property="tapInstructions" destination="lwX-sn-B91" id="aq2-zS-KQ4"/>
+                        <segue destination="1mJ-Nm-kMz" kind="modal" identifier="ShowVideoDetailsView" id="mca-dX-pQY"/>
+                        <segue destination="wEg-k4-gBT" kind="modal" identifier="ShowSwipeVideoView" modalTransitionStyle="crossDissolve" id="07Q-pk-mZR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DI3-Uo-ggu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-574" y="-105"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kAJ-XA-hwD">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="Rvb-ac-JBU" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="QuM-HK-jZG">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PJV-0Y-m6X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="499" y="199"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Z8b-n4-PVS">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="1mJ-Nm-kMz" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="XvZ-n7-XBA">
+                        <rect key="frame" x="0.0" y="-44" width="0.0" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="r3b-f6-KcH" kind="relationship" relationship="rootViewController" id="Hyk-Od-PnP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fRW-hF-Y3E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-35" y="-409"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background@2x.png" width="640" height="940"/>
+        <image name="film.png" width="22" height="26"/>
+        <image name="record.png" width="125" height="125"/>
+        <image name="trash.png" width="125" height="35"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
